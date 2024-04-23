@@ -47,7 +47,7 @@
         "image": "..images/grocery/sugar_small_1.jpg",
         "image_small": "../images/sugar_1.jpg",
         "attribute": "sugar",
-        "descript" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
+        "description" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
         "brand": "fortune",
         "avgRating": 4,
         "ratings": 24089,
@@ -56,12 +56,12 @@
         "badge": "seller"
       },
     "4": {
-        "id": 3,
+        "id": 4,
         "title": "fortune Sugar (Safed Khand) ",
         "image": "..images/grocery/sugar_small_2.jpg",
         "image_small": "../images/sugar_2.jpg",
         "attribute": "sugar",
-        "descript" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
+        "description" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
         "brand": "fortune",
         "avgRating": 4,
         "ratings": 24089,
@@ -70,12 +70,12 @@
         "badge": "seller"
       },
     "5": {
-        "id": 3,
+        "id": 5,
         "title": "MADHUR Sugar (Safed Khand) ",
         "image": "..images/grocery/sugar_small_3.jpg",
         "image_small": "../images/sugar_3.jpg",
         "attribute": "sugar",
-        "descript" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
+        "description" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
         "brand": "fortune",
         "avgRating": 4,
         "ratings": 24089,
@@ -86,12 +86,12 @@
 
 
     "6": {
-        "id": 3,
+        "id": 6,
         "title": "OM KAJU Budget Cashews  (500 g) ",
         "image": "..images/grocery/dryfruit_small_1.jpg",
         "image_small": "../images/dryfruit_1.jpg",
         "attribute": "dryfruit",
-        "descript" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
+        "description" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
         "brand": "dryfruit",
         "avgRating": 4,
         "ratings": 24089,
@@ -100,12 +100,12 @@
         "badge": "seller"
       },
     "7": {
-        "id": 3,
+        "id": 7,
         "title": "ProV California Independence Almonds",
         "image": "..images/grocery/dryfruit_small_2.jpg",
         "image_small": "../images/dryfruit_2.jpg",
         "attribute": "dryfruit",
-        "descript" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
+        "description" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
         "brand": "dryfruit",
         "avgRating": 4,
         "ratings": 24089,
@@ -114,12 +114,26 @@
         "badge": "seller"
       },
     "8": {
-        "id": 3,
+        "id": 8,
         "title": "Nutraj California Inshell Walnuts",
         "image": "..images/grocery/dryfruit_small_3.jpg",
         "image_small": "../images/dryfruit_3.jpg",
         "attribute": "dryfruit",
-        "descript" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
+        "description" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
+        "brand": "dryfruit",
+        "avgRating": 4,
+        "ratings": 24089,
+        "price": 434,
+        "oldPrice": 999,
+        "badge": "seller"
+      },
+    "9": {
+        "id": 9,
+        "title": "Nutraj California Inshell Walnuts",
+        "image": "..images/grocery/dryfruit_small_3.jpg",
+        "image_small": "../images/dryfruit_3.jpg",
+        "attribute": "dryfruit",
+        "description" :"Madhur Sugar is a well-known brand. It is sulfur free sugar and its grains are also large and the sweetness in their grains is very good and every time I choose only madhur brand sugar for my house.",
         "brand": "dryfruit",
         "avgRating": 4,
         "ratings": 24089,
