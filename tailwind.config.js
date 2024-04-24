@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors:{
-      flipkartclone :{
-        background : "#F1F2F4",
+      amazonclone :{
+        background : "#E3E6E6",
         light_blue :"#232F3E",
         yellow : "#FEBD69",
         DEFAULT : "#131921"
