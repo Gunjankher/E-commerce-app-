@@ -4,7 +4,7 @@ import {MagnifyingGlassIcon} from '@heroicons/react/24/outline'
 
 function Search() {
   return (
-    <div className='w-[60%] mt-2'>
+    <div className='w-[60%] mt-2 '>
         <div className='flex items-center  h-10 bg-amazonclone-yellow rounded'>
 <select 
 className='text-black p-2 bg-gray-300 border text-xs xl:text-sm'

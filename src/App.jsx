@@ -1,14 +1,20 @@
 import { useState } from 'react'
-import Homepage from './components/Homepage'
+import {Routes,BrowserRouter,Route} from 'react-router-dom'
+import './App.css'
+import { Checkout,ProductPage,SearchResults,Homepage,Navbar } from './components';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-   <Homepage/>
-    </>
-  )
-}
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Homepage />} />
+        <Route path="/search" element={<SearchResults />} />
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App

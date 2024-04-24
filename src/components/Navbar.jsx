@@ -25,7 +25,7 @@ function Navbar() {
 <div className='text-white grow relative'></div>
 <Search />
 {/* right */}
-<div className='flex items-center'>
+<div className='flex items-center pl-4'>
 
 <div className='text-white pl-4 pr-4'>
 <div className='text-sm xl:text-lg'>Hello</div>
