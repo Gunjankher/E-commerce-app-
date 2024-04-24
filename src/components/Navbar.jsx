@@ -1,10 +1,11 @@
 import React from 'react'
 import {ShoppingCartIcon} from '@heroicons/react/24/outline'
+import Search from './Search'
 
 
 function Navbar() {
   return (
- <header className='min-w-[1000px]'>
+ <header className='min-w-[1000px] text-center'>
 <div className='bg-amazonclone h-[60px]'>
 
 <div className='flex'>
@@ -12,7 +13,7 @@ function Navbar() {
 <div className='flex items-center mt-2 pl-5'>
     <img className='w-[100px]' src="../images/amazon.png" alt="" />
 
-<div className='text-white pl-4'>
+<div className='text-white pl-4 pr-4'>
     <div className='text-xs xl:text-sm"'>Deliver to</div>
     <div className='text-sm xl:text-base font-bold'>Ahemdabad</div>
 </div>
@@ -21,12 +22,13 @@ function Navbar() {
 
 
     {/* middle */}
-<div className='text-white grow'>Search</div>
+<div className='text-white grow relative'></div>
+<Search />
 {/* right */}
 <div className='flex items-center'>
 
 <div className='text-white pl-4 pr-4'>
-<div>Hello</div>
+<div className='text-sm xl:text-lg'>Hello</div>
 <div>Sign in </div>
 </div>
 
