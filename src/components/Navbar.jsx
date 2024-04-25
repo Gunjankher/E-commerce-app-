@@ -1,6 +1,7 @@
 import React from 'react'
 import {ShoppingCartIcon} from '@heroicons/react/24/outline'
 import Search from './Search'
+import { Link } from 'react-router-dom'
 
 
 function Navbar() {
@@ -11,7 +12,9 @@ function Navbar() {
 <div className='flex'>
     {/* left */}
 <div className='flex items-center mt-2 pl-5'>
+  <Link to={'/'}>
     <img className='w-[100px]' src="../images/amazon.png" alt="" />
+  </Link>
 
 <div className='text-white pl-4 pr-4'>
     <div className='text-xs xl:text-sm"'>Deliver to</div>
@@ -40,6 +43,7 @@ function Navbar() {
 <div>
 
 </div>
+<Link to={"/checkout"}>
 <div className="flex pr-3 pl-3 text-white">
               <ShoppingCartIcon className="h-[48px]" />
               <div className="relative">
@@ -48,6 +52,7 @@ function Navbar() {
               </div>
               <div className="mt-7 text-xs xl:text-sm font-bold">Cart</div>
             </div>
+</Link>
 </div>
 
 
