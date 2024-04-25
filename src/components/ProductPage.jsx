@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import { callAPI } from '../utilis/CallApi'
+import { useParams } from 'react-router-dom'
+import { callAPI } from '../utilis/callApi'
  
 function ProductPage() {
-  const [product,SetProduct]= useState(null)
+  const [product,setProduct]= useState(null)
+  const {id}= useParams()
 
   const getProduct = ()=>{
-    callApi(`data/products.json`)
+    callAPI(`data/products.json`)
     .then((productResult)=>{
-SetProduct(productResult[id])
+setProduct(productResult[id])
     })
   }
 
@@ -15,26 +17,10 @@ useEffect(()=>{
 getProduct()
 },[])
 
-if(!product?.title)return <h1>loading....</h1>
-  return (
+if(product?.title) return <h1>loading......</h1>
+  return (product &&
+    <div> product page{product.title}</div>
 
-<div className='h-screen bg-amazonclone-background'>
-    <div className='grid grid-cols-10' >
-{/* left */}
-<div className='col-span-5 bg-red-400'>
-  <img src={`${product.image}`} />
-</div>
-{/* middle */}
-<div className='col-span-3 bg-green-400'>
-g
-</div>
-{/* right */}
-<div className='col-span-2 bg-blue-400'>
-  b
-</div>
-
-    </div>
-</div>
   )
 }
 
