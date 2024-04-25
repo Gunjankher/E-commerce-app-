@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { callAPI } from '../utilis/CallApi.js'
 import { useParams } from 'react-router-dom'
+import ProductDetails from './ProductDetails.jsx'
 
 function ProductPage() {
   const {id} = useParams()
@@ -31,8 +32,8 @@ if(!product?.title)return <h1>loading............</h1>
   <img src={`${product.image}`}  />
 </div>
 {/* middle */}
-<div className='col-span-5 bg-green-400'>
-g
+<div className='col-span-5'>
+<ProductDetails product={product} ratings={true} />
 </div>
 {/* right */}
 <div className='col-span-2 bg-blue-400'>

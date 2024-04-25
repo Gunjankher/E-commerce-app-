@@ -2,23 +2,43 @@ import React from 'react'
 import {StarIcon} from '@heroicons/react/24/outline'
 
 function ProductRatings(props) {
-  const starNumber = props.avgrating
+  const starNumber = props.avgRating
   const ratingNumber = props.ratings
   return (
-  <div>
+  <div className='flex'>
 {Array.from ({length : starNumber},(_,i)=>
-<StarIcon key={i} className='"stroke-[#F1B61F] fill-[#F1B61F] h-[20px]"' />
+<StarIcon key={i} className="stroke-[#F1B61F] fill-[#F1B61F] h-[20px]" />
 )}
 
-{Array.from({lenght : 5-starNumber},(_,i)=>
+{Array.from({length : 5-starNumber},(_,i)=>
 <StarIcon className='stroke-[#F1B61F] h-[20px]' />
 )}
 
-<span  className='ml-3 text-blue-500'>raings {ratingNumber}</span>
+<span  className='ml-3 text-blue-500'>ratings {ratingNumber}</span>
 
   </div>
   
   )
 }
-
 export default ProductRatings
+
+
+// const ProductRatings = (props) => {
+//   const starNumber = props.avgRating;
+//   const ratingNumber = props.ratings;
+
+//   return (
+//     <div className="flex">
+//       {Array.from({ length: starNumber }, (_, i) => (
+//         <StarIcon
+//           key={i}
+//           className="stroke-[#F1B61F] fill-[#F1B61F] h-[20px]"
+//         />
+//       ))}
+//       {Array.from({ length: 5 - starNumber }, (_, i) => (
+//         <StarIcon key={i} className="stroke-[#F1B61F] h-[20px]" />
+//       ))}
+//       <span className="ml-3 text-blue-500">{ratingNumber} ratings</span>
+//     </div>
+//   );
+// };
