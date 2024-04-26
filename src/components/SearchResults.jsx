@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { callAPI } from '../utilis/CallApi'
 import { useSearchParams,Link } from 'react-router-dom'
-import {ProductDetails} from './ProductDetails'
+import ProductDetails from './ProductDetails';
+import { GB_CURRENCY } from '../utilis/constants';
 
 function SearchResults() {
   const [searchParams] = useSearchParams();
@@ -16,7 +17,7 @@ callAPI(`data/search.json`)
 const categoryResults = SearchResults[category]
 
 if(searchTerm){
-const results = categoryResults.filter(products=>products.title.toLowerCase().includes(searchTerm.toLowerCase()))
+const results = categoryResults.filter((product)=>product.title.toLowerCase().includes(searchTerm.toLowerCase()))
 setProducts(results)
 }else{
   setProducts(categoryResults)
@@ -30,7 +31,7 @@ setProducts(results)
 
 useEffect(()=>{
   getSearchResults()
-},[getSearchResults])
+},[searchParams])
 
 
 

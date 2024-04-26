@@ -6,7 +6,7 @@ import Search from "./Search";
 import ProductPage from "./ProductPage";
 import Checkout from "./Checkout";
 import SearchResults from "./SearchResults";
-import ProductDetails from "../components/";
+import ProductDetails from "./ProductDetails"
 
 export {
     Homepage,
@@ -17,7 +17,7 @@ Search,
 ProductPage,
 Checkout,
 SearchResults,
-ProductDetails
+ProductDetails,
 
 
 }

@@ -11,7 +11,7 @@ function ProductRatings(props) {
 )}
 
 {Array.from({length : 5-starNumber},(_,i)=>
-<StarIcon className='stroke-[#F1B61F] h-[20px]' />
+<StarIcon key={i} className='stroke-[#F1B61F] h-[20px]' />
 )}
 
 <span  className='ml-3 text-blue-500'>ratings {ratingNumber}</span>

@@ -46,6 +46,7 @@ useEffect(()=>{
         <div className='flex items-center  h-10 bg-amazonclone-yellow rounded'>
 <select 
 className='text-black p-2 bg-gray-300 border text-xs xl:text-sm'
+onChange={(e)=> setCategory(e.target.value)}
 >
 
 <option>All</option>
