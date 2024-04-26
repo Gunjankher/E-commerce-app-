@@ -10,6 +10,7 @@ function ProductPage() {
   const dispatch = useDispatch()
   const {id} = useParams()
 const[product,setProduct] =useState(null)
+const [quantity, setQuantity] = useState("1");
 
 
 const getProduct = () => {
@@ -18,6 +19,10 @@ const getProduct = () => {
   });
 };
 
+const addQuantitytoProduct = ()=>{
+  setProduct((product.quantity = quantity));
+    return product;
+}
 
 useEffect(()=>{
 getProduct()
@@ -70,6 +75,7 @@ Free Delivery
 <div className='text-base xl:text-lg mt-1'>
 Quantity
 <select
+onChange={(e)=>setQuantity(e.target.value)}
 className='p-2 mx-3 bg-white border rounded-md focus:border-indigo-600'
 
 >
@@ -79,10 +85,10 @@ className='p-2 mx-3 bg-white border rounded-md focus:border-indigo-600'
   <option>4</option>
 </select>
 </div>
-<Link>
+<Link to={'/checkout'}>
 <button
 className='btn my-5 -mx-1 text-black border p-2 rounded-lg w-full bg-yellow-400'
-onClick={dispatch(addToCart)}
+onClick={()=>dispatch(addToCart(addQuantitytoProduct()))}
 >
   Add to Cart
 </button>

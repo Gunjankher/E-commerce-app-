@@ -4,9 +4,9 @@ import CarouselProduct from "./CarouselProduct";
 import Navbar from "./Navbar";
 import Search from "./Search";
 import ProductPage from "./ProductPage";
-import Checkout from "./Checkout";
 import SearchResults from "./SearchResults";
 import ProductDetails from "./ProductDetails"
+import Checkout from './Checkout'
 
 export {
     Homepage,
@@ -15,9 +15,9 @@ CarouselProduct,
 Navbar,
 Search,
 ProductPage,
-Checkout,
 SearchResults,
 ProductDetails,
+Checkout
 
 
 }
