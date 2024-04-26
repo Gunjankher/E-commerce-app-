@@ -6,7 +6,7 @@ import Search from "./Search";
 import ProductPage from "./ProductPage";
 import Checkout from "./Checkout";
 import SearchResults from "./SearchResults";
-import ProductDetails from "./ProductDetails";
+import ProductDetails from "../components/";
 
 export {
     Homepage,
