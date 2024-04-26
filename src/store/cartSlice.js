@@ -7,8 +7,8 @@ const initialState = {
 }
 
 
-const slice = createSlice({
-
+const cartSlice = createSlice({
+name : "cart",
 initialState,
 
 reducers :{
@@ -25,3 +25,7 @@ removeFormCart :(state ,action) =>{
 
 
 })
+
+export const {addToCart,removeFormCart} = cartSlice.actions
+
+export default createSlice.reducer
