@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux'
 
 function Navbar() {
 
-const cart = useSelector((state)=>state.cart.productsNumber)
+  const cart = useSelector((state)=>state.cart.productsNumber)
 
   return (
  <header className='min-w-[1000px] text-center'>

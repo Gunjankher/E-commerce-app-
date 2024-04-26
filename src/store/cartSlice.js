@@ -6,26 +6,20 @@ const initialState = {
     productsNumber : 0
 }
 
+export const cartSlice = createSlice({
+    name: "cart",
+    initialState,
+    reducers: {
+      addToCart: (state, action) => {
+       state.productsNumber = state.productsNumber + 1
+      },
+      removeFromCart: (state, action) => {
+       
+      },
+    
+    },
+  });
 
-const cartSlice = createSlice({
-name : "cart",
-initialState,
+export const {addToCart,removeFromCart} = cartSlice.actions
 
-reducers :{
-addToCart : (state,action) =>{
-state.productsNumber = state.productsNumber+1
-},
-
-removeFormCart :(state ,action) =>{
-
-} 
-
-
-}
-
-
-})
-
-export const {addToCart,removeFormCart} = cartSlice.actions
-
-export default createSlice.reducer
+export default cartSlice.reducer

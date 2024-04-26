@@ -3,8 +3,11 @@ import { callAPI } from '../utilis/CallApi.js'
 import { useParams,Link } from 'react-router-dom'
 import ProductDetails from './ProductDetails.jsx'
 import { GB_CURRENCY } from '../utilis/constants.js'
+import { addToCart } from '../store/cartSlice.js'
+import { useDispatch } from 'react-redux'
 
 function ProductPage() {
+  const dispatch = useDispatch()
   const {id} = useParams()
 const[product,setProduct] =useState(null)
 
@@ -76,9 +79,10 @@ className='p-2 mx-3 bg-white border rounded-md focus:border-indigo-600'
   <option>4</option>
 </select>
 </div>
-<Link to={"/checkout"}>
+<Link>
 <button
 className='btn my-5 -mx-1 text-black border p-2 rounded-lg w-full bg-yellow-400'
+onClick={dispatch(addToCart)}
 >
   Add to Cart
 </button>
