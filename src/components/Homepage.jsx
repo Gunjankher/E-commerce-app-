@@ -6,10 +6,10 @@ import Navbar from './Navbar'
 function Homepage() {
   return (
     <div className='bg-amazonclone-background'>
-    <Carousel />
-    <CarouselProduct />
+      <Carousel />
+      <CarouselProduct />
 
-     </div>
+    </div>
   )
 }
 
