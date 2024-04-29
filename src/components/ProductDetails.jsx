@@ -2,18 +2,18 @@ import React from 'react'
 import ProductBadge from './ProductBadge'
 import ProductRatings from './ProductRatings'
 
-function ProductDetails({product,ratings}) {
+function ProductDetails({ product, ratings }) {
   return (
     <div className='mb-1'>
-<div className='text-xl xl:text-2xl font-medium mb-1'>
-    {product.title}
-</div>
+      <div className='text-xl xl:text-2xl font-medium mb-1'>
+        {product.title}
+      </div>
 
-<div className='text-sm xl:text-base mb-1'>
-   by <span className='text-blue-400'>  {product.brand}</span>
-</div>
+      <div className='text-sm xl:text-base mb-1'>
+        by <span className='text-blue-400'>  {product.brand}</span>
+      </div>
 
-{ratings && (
+      {ratings && (
         <div className="text-sm xl:text-base mb-1">
           <ProductRatings
             avgRating={product.avgRating}
@@ -21,7 +21,7 @@ function ProductDetails({product,ratings}) {
           />
         </div>
       )}
-        <div className="text-xs xl:text-sm font-bold mb-1">
+      <div className="text-xs xl:text-sm font-bold mb-1">
         {product.attribute}
       </div>
       <div>
