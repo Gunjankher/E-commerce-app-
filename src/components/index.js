@@ -17,7 +17,7 @@ Search,
 ProductPage,
 SearchResults,
 ProductDetails,
-Checkout
+Checkout,
 
 
 }
