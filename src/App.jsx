@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import {Routes,BrowserRouter,Route} from 'react-router-dom'
+import { Routes, BrowserRouter, Route } from 'react-router-dom'
 import './App.css'
-import { Checkout,ProductPage,SearchResults,Homepage,Navbar } from './components';
+import { Checkout, ProductPage, SearchResults, Homepage, Navbar } from './components';
 
 const App = () => {
   return (
